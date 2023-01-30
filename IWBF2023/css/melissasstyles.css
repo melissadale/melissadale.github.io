@@ -9,3 +9,27 @@
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   max-width: 100%;
 }
+
+
+
+
+.column{
+  /* height: 50; */
+  width: 9%;
+  display:inline-block;
+  margin-left:0px;
+}
+
+.rowmine{
+  width: 100%;
+  /* height: 200px; */
+}
+
+.tile img {
+  transition:transform 0.25s ease;
+}
+
+img:hover {
+  -webkit-transform:scale(10); /* or some other value */
+  transform:scale(10);
+}
