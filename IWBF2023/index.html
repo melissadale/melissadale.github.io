@@ -52,7 +52,7 @@ http://www.templatemo.com/tm-498-stimulus
 
           <div class="collapse navbar-collapse">
                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home" class="smoothScroll">IWBF 2023</a></li>
+                    <li><a href="index.html" class="smoothScroll">IWBF 2023</a></li>
                     <li><a href="#about" class="smoothScroll"></a></li>
                     <li><a href="BioCop.html" class="smoothScroll">BioCop 2008</a></li>
                     <li><a href="NISTBSSR1.html" class="smoothScroll">NIST BSSR1</a></li>
@@ -84,35 +84,35 @@ http://www.templatemo.com/tm-498-stimulus
 <section id="service" class="parallax-section">
      <div class="container">
           <div class="row">
-               <div class="bg-white col-md-3 col-sm-6">
+               <a href='index.html'><div class="bg-white col-md-3 col-sm-6">
                     <div class="wow fadeInUp service-thumb" data-wow-delay="0.2s">
                          <i class="fa fa-tachometer"></i>
-                              <h3>Descriptions</h3>
-                              <p>Ad eundum quo nemo ante iit</p>
-                    </div>
+                              <h3>Dataset Descriptions</h3>
+                              <p>And Individual Modality Performance</p>
+                    </div></a>
                </div>
 			   
 			   <a href='BioCop.html'><div class="col-md-3 col-sm-6">
                     <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.5s">
-                         <i class="fa fa-user-circle"></i>
+                         <i class="fa fa-plus-square"></i>
                               <h3>BioCop 2008 Score Dataset</h3>
-                              <p class="color-white">Adding a Modality to a Biometric System.</p>
+                              <p class="color-white">Modalities: Iris (left and right), Ocular (left and right)</p>
                     </div></a>
                </div>
 
                <a href='NISTBSSR1.html'><div class="bg-dark col-md-3 col-sm-6">
                     <div class="wow fadeInUp color-white service-thumb" data-wow-delay="0.8s">
-                         <i class="fa fa-user-circle-o"></i>
+                         <i class="fa fa-object-ungroup"></i>
                               <h3>NIST BSSR1</h3>
-                              <p class="color-white">Merging Existing Modalities.</p>
+                              <p class="color-white">Modalities: Face Matcher C, Face Matcher G, Left and Right Thumbprints</p>
                     </div></a>
                </div>
 
                <a href='MITLLTRIMODAL.html'><div class="col-md-3 col-sm-6">
                     <div class="wow fadeInUp color-white service-thumb" data-wow-delay="1.1s">
-                         <i class="fa fa-user-o"></i>
+                         <i class="fa fa-minus-square"></i>
                               <h3>MITLL Trimodal</h3>
-                              <p class="color-white">Retiring a Modality</p>
+                              <p class="color-white">Modalities: Face, Speech, Text</p>
                     </div></a>
                </div>
 
@@ -124,9 +124,9 @@ http://www.templatemo.com/tm-498-stimulus
 
 <div class="fmrs">
      <ul class="tabs-menu">
-          <li class="tabs-menu"><a class="#a1" href="#home">TMR @ FMR = 1.0% </a></li>
-          <li class="tabs-menu"><a href="#a01">TMR @ FMR = 0.1% </a></li>
-          <li class="tabs-menu"><a href="#a001">TMR @ FMR = 0.01% </a></li>
+          <li class="tabs-menu"><a class="#a1" href="#home">BioCop 2008  </a></li>
+          <li class="tabs-menu"><a href="#a01">NIST BSSR1</a></li>
+          <li class="tabs-menu"><a href="#a001">MITLL Trimodal</a></li>
         </ul>
 
 </div>
@@ -140,81 +140,63 @@ http://www.templatemo.com/tm-498-stimulus
 <!-- ==============================================================================================================================-->
 <!-- ==============================================================================================================================-->
 <!-- ==============================================================================================================================-->
-<div></div>
-<h2 style="text-align:center" class="move_down">BioCop 2008 Score Dataset</h2>
+<div id="a1"></div>
+<h2 style="text-align:center" class="move_down header">BioCop 2008 Score Dataset</h2>
   <div class="row">
      
-	<h3 id="a1">TMR @ FMR = 1.0%</h3>
+	<h3 id="a1">Dataset by numbers</h3>
      <div class="rowmine">
-			<div >
-				<img class="tile" src="img/BioCop-0-TMRFMR1-wide.png" width="100%" >
-			</div>
-			<div >
-				<img class="tile" src="img/BioCop-10-TMRFMR1-wide.png" width="100%" >
-			</div>
-			<div >
-				<img class="tile" src="img/BioCop-20-TMRFMR1-wide.png" width="100%" >
-			</div>
-			<div >
-				<img class="tile" src="img/BioCop-30-TMRFMR1-wide.png" width="100%" >
-			</div>
-			<div >
-				<img class="tile" src="img/BioCop-40-TMRFMR1-wide.png" width="100%" >
-			</div>
-
-			<div >
-				<img class="tile" src="img/BioCop-50-TMRFMR1-wide.png" width="100%" >
-			</div>
-			<div >
-				<img class="tile" src="img/BioCop-60-TMRFMR1-wide.png" width="100%" >
-			</div>
-			<div >
-				<img class="tile" src="img/BioCop-70-TMRFMR1-wide.png" width="100%" >
-			</div>
-			<div >
-				<img class="tile" src="img/BioCop-80-TMRFMR1-wide.png" width="100%" >
-			</div>
-			<div >
-				<img class="tile" src="img/BioCop-90-TMRFMR1-wide.png" width="100%" >
-			</div>
+          <table border="1" class="dataframe">
+               <thead>
+                 <tr style="text-align: right;">
+                   <th></th>
+                   <th>Original</th>
+                   <th>Balanced</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th style="text-align: right;"># Score Vectors</th>
+                   <td>139,230</td>
+                   <td>870</td>
+                 </tr>
+                 <tr>
+                   <th style="text-align: right;"># Genuine Score Vectors</th>
+                   <td>435</td>
+                   <td>435</td>
+                 </tr>
+                 <tr>
+                   <th style="text-align: right;"># Imposter Score Vectors</th>
+                   <td>138,795</td>
+                   <td>435</td>
+                 </tr>
+                 <!-- <tr>
+                   <th># Subjects</th>
+                   <td>330</td>
+                   <td>314</td>
+                 </tr> -->
+               </tbody>
+             </table>
 		</div>
     </div>
     
      <!-- ==============================================================================================================================-->
      <div class="row">
      
-          <h3 id="a01">TMR @ FMR = 0.1%</h3>
+          <h3> Modality Distributions</h3>
           <div class="rowmine">
+               <div class="rowmine">
                     <div >
-                         <img class="tile" src="img/BioCop-0-TMRFMR01-wide.png" width="100%" >
+                         <img class="tile" src="img/HISTS/BioCop-Score_iris_left.png" width="100%" >
                     </div>
                     <div >
-                         <img class="tile" src="img/BioCop-10-TMRFMR01-wide.png" width="100%" >
+                         <img class="tile" src="img/HISTS/BioCop-Score_iris_right.png" width="100%" >
                     </div>
                     <div >
-                         <img class="tile" src="img/BioCop-20-TMRFMR01-wide.png" width="100%" >
+                         <img class="tile" src="img/HISTS/BioCop-Score_oc_left.png" width="100%" >
                     </div>
                     <div >
-                         <img class="tile" src="img/BioCop-30-TMRFMR01-wide.png" width="100%" >
-                    </div>
-                    <div >
-                         <img class="tile" src="img/BioCop-40-TMRFMR01-wide.png" width="100%" >
-                    </div>
-     
-                    <div >
-                         <img class="tile" src="img/BioCop-50-TMRFMR01-wide.png" width="100%" >
-                    </div>
-                    <div >
-                         <img class="tile" src="img/BioCop-60-TMRFMR01-wide.png" width="100%" >
-                    </div>
-                    <div >
-                         <img class="tile" src="img/BioCop-70-TMRFMR01-wide.png" width="100%" >
-                    </div>
-                    <div >
-                         <img class="tile" src="img/BioCop-80-TMRFMR01-wide.png" width="100%" >
-                    </div>
-                    <div >
-                         <img class="tile" src="img/BioCop-90-TMRFMR01-wide.png" width="100%" >
+                         <img class="tile" src="img/HISTS/BioCop-Score_oc_right.png" width="100%" >
                     </div>
                </div>
          </div>
@@ -222,44 +204,174 @@ http://www.templatemo.com/tm-498-stimulus
           <!-- ==============================================================================================================================-->
           <div class="row">
      
-               <h3 id="a001">TMR @ FMR = 0.01%</h3>
+               <h3>Individual Modality ROC</h3>
                <div class="rowmine">
-                         <div >
-                              <img class="tile" src="img/BioCop-0-TMRFMR001-wide.png" width="100%" >
-                         </div>
-                         <div >
-                              <img class="tile" src="img/BioCop-10-TMRFMR001-wide.png" width="100%" >
-                         </div>
-                         <div >
-                              <img class="tile" src="img/BioCop-20-TMRFMR001-wide.png" width="100%" >
-                         </div>
-                         <div >
-                              <img class="tile" src="img/BioCop-30-TMRFMR001-wide.png" width="100%" >
-                         </div>
-                         <div >
-                              <img class="tile" src="img/BioCop-40-TMRFMR001-wide.png" width="100%" >
-                         </div>
-          
-                         <div >
-                              <img class="tile" src="img/BioCop-50-TMRFMR001-wide.png" width="100%" >
-                         </div>
-                         <div >
-                              <img class="tile" src="img/BioCop-60-TMRFMR001-wide.png" width="100%" >
-                         </div>
-                         <div >
-                              <img class="tile" src="img/BioCop-70-TMRFMR001-wide.png" width="100%" >
-                         </div>
-                         <div >
-                              <img class="tile" src="img/BioCop-80-TMRFMR001-wide.png" width="100%" >
-                         </div>
-                         <div >
-                              <img class="tile" src="img/BioCop-90-TMRFMR001-wide.png" width="100%" >
-                         </div>
+                         
+                    <div >
+                         <img class="tile" src="img/ROC/BioCop.png" width="100%" >
+                    </div>
                     </div>
               </div>
               
                <!-- ==============================================================================================================================-->
+               <!-- ==============================================================================================================================-->
+               <div id="a01"></div>
+               <h2 style="text-align:center" class="move_down header">NIST BSSR1 Score Dataset</h2>
+                 <div class="row">
+                    
+                    <h3 id="a1">Dataset by numbers</h3>
+                    <div class="rowmine">
+                         <table border="1" class="dataframe">
+                              <thead>
+                                <tr style="text-align: center;">
+                                  <th></th>
+                                  <th>Original</th>
+                                  <th>Balanced</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th style="text-align: right;"># Score Vectors</th>
+                                  <td>133,903</td>
+                                  <td>1,034</td>
+                                </tr>
+                                <tr>
+                                  <th style="text-align: right;"># Genuine Score Vectors</th>
+                                  <td>517</td>
+                                  <td>517</td>
+                                </tr>
+                                <tr>
+                                  <th style="text-align: right;"># Imposter Score Vectors</th>
+                                  <td>133,386</td>
+                                  <td>517</td>
+                                </tr>
+                                <!-- <tr>
+                                  <th># Subjects</th>
+                                  <td>517</td>
+                                  <td>517</td>
+                                </tr> -->
+                              </tbody>
+                            </table>
+                         </div>
+                   </div>
+                   
+                    <!-- ==============================================================================================================================-->
+                    <div class="row">
+                    
+                         <h3> Modality Distributions</h3>
+                         <div class="rowmine">
+                              <div class="rowmine">
+                                   <div >
+                                        <img class="tile" src="img/HISTS/NIST BSSR1-FaceC.png" width="100%" >
+                                   </div>
+                                   <div >
+                                        <img class="tile" src="img/HISTS/NIST BSSR1-FaceG.png" width="100%" >
+                                   </div>
+                                   <div >
+                                        <img class="tile" src="img/HISTS/NIST BSSR1-Left.png" width="100%" >
+                                   </div>
+                                   <div >
+                                        <img class="tile" src="img/HISTS/NIST BSSR1-Right.png" width="100%" >
+                                   </div>
+                              </div>
+                        </div>
+                        
+                         <!-- ==============================================================================================================================-->
+                         <div class="row">
+                    
+                              <h3 id="a001">Individual Modality ROC</h3>
+                              <div class="rowmine">
+                                        
+                                   <div >
+                                        <img class="tile" src="img/ROC/NIST BSSR1.png" width="100%" >
+                                   </div>
+                                   </div>
+                             </div>
+                             
+                              <!-- ==============================================================================================================================-->
+                              <!-- ==============================================================================================================================-->
 
+
+               <!-- ==============================================================================================================================-->
+               <!-- ==============================================================================================================================-->
+               <div id="a001"></div>
+               <h2 style="text-align:center" class="move_down header">MITLL Trimodal Score Dataset</h2>
+                 <div class="row">
+                    
+                    <h3 id="a1">Dataset by numbers</h3>
+                    <div class="rowmine">
+                         <table border="1" class="dataframe">
+                              <thead>
+                                <tr style="text-align: center;">
+                                  <th></th>
+                                  <th>Original</th>
+                                  <th>Balanced</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th style="text-align: right;"># Score Vectors</th>
+                                  <td>107,471</td>
+                                  <td>59,364</td>
+                                </tr>
+                                <tr>
+                                  <th style="text-align: right;"># Genuine Score Vectors</th>
+                                  <td>77,789</td>
+                                  <td>29,682</td>
+                                </tr>
+                                <tr>
+                                  <th style="text-align: right;"># Imposter Score Vectors</th>
+                                  <td>29,682</td>
+                                  <td>29,682</td>
+                                </tr>
+                                <!-- <tr>
+                                  <th># Subjects</th>
+                                  <td>549</td>
+                                  <td>546</td>
+                                </tr> -->
+                              </tbody>
+                            </table>
+                         </div>
+                   </div>
+                   
+                    <!-- ==============================================================================================================================-->
+                    <div class="row">
+                    
+                         <h3> Modality Distributions</h3>
+                         <div class="rowmine">
+                              <div class="rowmine">
+                                   <div >
+                                        <img class="tile" src="img/HISTS/Trimodal-Face.png" width="100%" >
+                                   </div>
+                                   <div >
+                                        <img class="tile" src="img/HISTS/Trimodal-Speaker.png" width="100%" >
+                                   </div>
+                                   <div >
+                                        <img class="tile" src="img/HISTS/Trimodal-Text.png" width="100%" >
+                                   </div>
+                              </div>
+                        </div>
+                        
+                         <!-- ==============================================================================================================================-->
+                         <div class="row">
+                    
+                              <h3 id="a001">Individual Modality ROC</h3>
+                              <div class="rowmine">
+                                        
+                                   <div >
+                                        <img class="tile" src="img/ROC/Trimodal.png" width="100%" >
+                                   </div>
+                                   </div>
+                             </div>
+                             
+                              <!-- ==============================================================================================================================-->
+                              <!-- ==============================================================================================================================-->
+
+
+
+
+
+          </div>
      </div>
 </section>
 
