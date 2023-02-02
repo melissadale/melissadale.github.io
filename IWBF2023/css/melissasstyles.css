@@ -80,3 +80,11 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
+
+.header_row{
+  display: flex;
+}
+
+.child_row{
+  align-items: stretch;
+}
