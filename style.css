@@ -1,0 +1,186 @@
+/* Color Palette Update */
+:root {
+    --accent-color: #00FFC5; /* Light Green */
+    --dark-bg: #00241B; /* Dark Green */
+    --highlight-color: #7F6C8D ; /* Blue */
+    --secondary-color: #EB8258;
+    --background-color: #FFFFFF; /* White */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--dark-bg);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--dark-bg);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px; /* Spacing between sections */
+}
+
+.left-orientated {
+    flex-direction: row;
+}
+
+.right-orientated {
+    flex-direction: row-reverse;
+}
+
+.section img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.section div {
+    flex: 1;
+}
+
+footer {
+    background-color: var(--background-color);
+    color: var(--dark-bg);
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#intro-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 960px; /* Matches the max-width of your sections */
+    padding-top: 50px; /* Adds padding at the top */
+}
+
+#intro-header img {
+    width: 150px;
+    margin-right: 20px;
+}
+
+#intro-header div {
+    flex-grow: 1;
+}
+
+.main-container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.education-section {
+    padding: 20px;
+}
+
+.section-title {
+    border-bottom: 2px solid #00FFC5;
+    color: #EB8258;
+    padding-bottom: 5px;
+}
+
+.education-entry {
+    display: block;
+    margin-top: 20px;
+}
+
+.institution-dates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.institution-dates .institution {
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+    color: var(--highlight-color);
+}
+
+.institution-dates .dates {
+    margin-left: 20px;
+    white-space: nowrap;
+    color: var(--dark-bg);
+    font-weight: bold;
+}
+
+.degree {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.details {
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+@media (max-width: 768px) {
+    .education-entry,
+    .institution-dates {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .institution-dates .dates {
+        margin-left: 0;
+        margin-top: 5px;
+        text-align: right;
+    }
+
+    .main-container {
+        width: auto;
+        padding: 20px;
+    }
+}
+
+nav#navbar ul {
+    padding: 0;
+    text-align: center;
+    margin: 20; /* Adjust as needed */
+}
+
+nav#navbar ul li {
+    display: inline-block;
+    margin-right: 50px; /* Increases space between menu items */
+}
+
+nav#navbar ul li a {
+    color: var(--accent-color); /* Original color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav#navbar ul li a:hover {
+    color: #FFFFFF; /* Changes text color to white on hover */
+}
