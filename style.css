@@ -2,8 +2,8 @@
 :root {
     --accent-color: #00FFC5; /* Light Green */
     --dark-bg: #00241B; /* Dark Green */
-    --highlight-color: #7F6C8D ; /* Blue */
-    --secondary-color: #EB8258;
+    --highlight-color: #EB8258; /* orange - update: purple */
+    --secondary-color: #7F6C8D ; /* Grey Purple */
     --background-color: #FFFFFF; /* White */
 }
 
@@ -105,7 +105,7 @@ footer {
 
 .section-title {
     border-bottom: 2px solid #00FFC5;
-    color: #EB8258;
+    color: var(--secondary-color);
     padding-bottom: 5px;
 }
 
