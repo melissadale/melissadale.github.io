@@ -22,6 +22,22 @@ http://www.templatemo.com/tm-498-stimulus
 
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
 
+<style>
+    #hero {
+        padding: 100px 0;
+        text-align: center;
+        background: #f5f5f5;
+    }
+    .hero-text h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .hero-text p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+</style>
+
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
@@ -42,6 +58,7 @@ http://www.templatemo.com/tm-498-stimulus
 
           <!-- navbar header -->
           <div class="navbar-header">
+		  
                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
@@ -63,7 +80,20 @@ http://www.templatemo.com/tm-498-stimulus
      </div>
 </div>
 
-
+<!-- Hero Section -->
+<section id="hero" class="parallax-section">
+     <div class="container">
+          <div class="row">
+               <div class="col-md-12 col-sm-12">
+                    <div class="hero-text">
+                         <h1>To Impute or Not: Recommendations for Multibiometric Fusion</h1>
+                         <p>Dale, Melissa R., Elliot Singer, Bengt J. Borgström, and Arun Ross. "To Impute or Not: Recommendations for Multibiometric Fusion." In 2023 IEEE International Workshop on Information Forensics and Security (WIFS), pp. 1-6. IEEE, 2023.</p>
+                         <a href="./docs/To_Impute_or_Not_Recommendations_for_Multibiometric_Fusion.pdf" class="btn btn-primary" target="_blank">Read the Paper</a>
+                    </div>
+               </div>
+          </div>
+     </div>
+</section>
 
 <!-- About Section -->
 
@@ -73,11 +103,9 @@ http://www.templatemo.com/tm-498-stimulus
                     <div class="skill-thumb">
                     </div>
                </div>
-
           </div>
      </div>
 </section>
-
 
 <!-- Service Section -->
 
@@ -128,18 +156,13 @@ http://www.templatemo.com/tm-498-stimulus
           <li class="tabs-menu"><a href="#a01">NIST BSSR1 Description</a></li>
           <li class="tabs-menu"><a href="#a001">MITLL Trimodal Description</a></li>
         </ul>
-
 </div>
-
 
 <section class="parallax-section">
      <div class="container">
         <div class="row">
 
-
-<!-- ==============================================================================================================================-->
-<!-- ==============================================================================================================================-->
-<!-- ==============================================================================================================================-->
+<!-- BioCop 2008 -->
 <div id="a1"></div>
 <h2 style="text-align:center" class="move_down header">BioCop 2008 Score Dataset</h2>
   <div class="row">
@@ -180,7 +203,7 @@ http://www.templatemo.com/tm-498-stimulus
 		</div>
     </div>
     
-     <!-- ==============================================================================================================================-->
+     <!-- Modality Distributions -->
      <div class="row">
      
           <h3> Modality Distributions</h3>
@@ -201,7 +224,7 @@ http://www.templatemo.com/tm-498-stimulus
                </div>
          </div>
          
-          <!-- ==============================================================================================================================-->
+          <!-- Individual Modality ROC -->
           <div class="row">
      
                <h3>Individual Modality ROC</h3>
@@ -213,168 +236,153 @@ http://www.templatemo.com/tm-498-stimulus
                     </div>
               </div>
               
-               <!-- ==============================================================================================================================-->
-               <!-- ==============================================================================================================================-->
-               <div id="a01"></div>
-               <h2 style="text-align:center" class="move_down header">NIST BSSR1 Score Dataset</h2>
-                 <div class="row">
-                    
-                    <h3 id="a1">Dataset by numbers</h3>
-                    <div class="rowmine">
-                         <table border="1" class="dataframe">
-                              <thead>
-                                <tr style="text-align: center;">
-                                  <th></th>
-                                  <th>Original</th>
-                                  <th>Balanced</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th style="text-align: right;"># Score Vectors</th>
-                                  <td>133,903</td>
-                                  <td>1,034</td>
-                                </tr>
-                                <tr>
-                                  <th style="text-align: right;"># Genuine Score Vectors</th>
-                                  <td>517</td>
-                                  <td>517</td>
-                                </tr>
-                                <tr>
-                                  <th style="text-align: right;"># Imposter Score Vectors</th>
-                                  <td>133,386</td>
-                                  <td>517</td>
-                                </tr>
-                                <!-- <tr>
-                                  <th># Subjects</th>
-                                  <td>517</td>
-                                  <td>517</td>
-                                </tr> -->
-                              </tbody>
-                            </table>
-                         </div>
-                   </div>
-                   
-                    <!-- ==============================================================================================================================-->
-                    <div class="row">
-                    
-                         <h3> Modality Distributions</h3>
-                         <div class="rowmine">
-                              <div class="rowmine">
-                                   <div >
-                                        <img class="tile" src="img/HISTS/NIST BSSR1-FaceC.png" width="100%" >
-                                   </div>
-                                   <div >
-                                        <img class="tile" src="img/HISTS/NIST BSSR1-FaceG.png" width="100%" >
-                                   </div>
-                                   <div >
-                                        <img class="tile" src="img/HISTS/NIST BSSR1-Left.png" width="100%" >
-                                   </div>
-                                   <div >
-                                        <img class="tile" src="img/HISTS/NIST BSSR1-Right.png" width="100%" >
-                                   </div>
-                              </div>
-                        </div>
-                        
-                         <!-- ==============================================================================================================================-->
-                         <div class="row">
-                    
-                              <h3 id="a001">Individual Modality ROC</h3>
-                              <div class="rowmine">
-                                        
-                                   <div >
-                                        <img class="tile" src="img/ROC/NIST BSSR1.png" width="100%" >
-                                   </div>
-                                   </div>
-                             </div>
-                             
-                              <!-- ==============================================================================================================================-->
-                              <!-- ==============================================================================================================================-->
+<!-- NIST BSSR1 -->
+<div id="a01"></div>
+<h2 style="text-align:center" class="move_down header">NIST BSSR1 Score Dataset</h2>
+  <div class="row">
+     
+	<h3 id="a1">Dataset by numbers</h3>
+     <div class="rowmine">
+          <table border="1" class="dataframe">
+               <thead>
+                 <tr style="text-align: right;">
+                   <th></th>
+                   <th>Original</th>
+                   <th>Balanced</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th style="text-align: right;"># Score Vectors</th>
+                   <td>133,903</td>
+                   <td>1,034</td>
+                 </tr>
+                 <tr>
+                   <th style="text-align: right;"># Genuine Score Vectors</th>
+                   <td>517</td>
+                   <td>517</td>
+                 </tr>
+                 <tr>
+                   <th style="text-align: right;"># Imposter Score Vectors</th>
+                   <td>133,386</td>
+                   <td>517</td>
+                 </tr>
+                 <!-- <tr>
+                   <th># Subjects</th>
+                   <td>517</td>
+                   <td>517</td>
+                 </tr> -->
+               </tbody>
+             </table>
+		</div>
+    </div>
+    
+     <!-- Modality Distributions -->
+     <div class="row">
+     
+          <h3> Modality Distributions</h3>
+          <div class="rowmine">
+               <div class="rowmine">
+                    <div >
+                         <img class="tile" src="img/HISTS/NIST BSSR1-FaceC.png" width="100%" >
+                    </div>
+                    <div >
+                         <img class="tile" src="img/HISTS/NIST BSSR1-FaceG.png" width="100%" >
+                    </div>
+                    <div >
+                         <img class="tile" src="img/HISTS/NIST BSSR1-Left.png" width="100%" >
+                    </div>
+                    <div >
+                         <img class="tile" src="img/HISTS/NIST BSSR1-Right.png" width="100%" >
+                    </div>
+               </div>
+         </div>
+         
+          <!-- Individual Modality ROC -->
+          <div class="row">
+     
+               <h3>Individual Modality ROC</h3>
+               <div class="rowmine">
+                         
+                    <div >
+                         <img class="tile" src="img/ROC/NIST BSSR1.png" width="100%" >
+                    </div>
+                    </div>
+              </div>
 
-
-               <!-- ==============================================================================================================================-->
-               <!-- ==============================================================================================================================-->
-               <div id="a001"></div>
-               <h2 style="text-align:center" class="move_down header">MITLL Trimodal Score Dataset</h2>
-                 <div class="row">
-                    
-                    <h3 id="a1">Dataset by numbers</h3>
-                    <div class="rowmine">
-                         <table border="1" class="dataframe">
-                              <thead>
-                                <tr style="text-align: center;">
-                                  <th></th>
-                                  <th>Original</th>
-                                  <th>Balanced</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th style="text-align: right;"># Score Vectors</th>
-                                  <td>107,471</td>
-                                  <td>59,364</td>
-                                </tr>
-                                <tr>
-                                  <th style="text-align: right;"># Genuine Score Vectors</th>
-                                  <td>77,789</td>
-                                  <td>29,682</td>
-                                </tr>
-                                <tr>
-                                  <th style="text-align: right;"># Imposter Score Vectors</th>
-                                  <td>29,682</td>
-                                  <td>29,682</td>
-                                </tr>
-                                <!-- <tr>
-                                  <th># Subjects</th>
-                                  <td>549</td>
-                                  <td>546</td>
-                                </tr> -->
-                              </tbody>
-                            </table>
-                         </div>
-                   </div>
-                   
-                    <!-- ==============================================================================================================================-->
-                    <div class="row">
-                    
-                         <h3> Modality Distributions</h3>
-                         <div class="rowmine">
-                              <div class="rowmine">
-                                   <div >
-                                        <img class="tile" src="img/HISTS/Trimodal-Face.png" width="100%" >
-                                   </div>
-                                   <div >
-                                        <img class="tile" src="img/HISTS/Trimodal-Speaker.png" width="100%" >
-                                   </div>
-                                   <div >
-                                        <img class="tile" src="img/HISTS/Trimodal-Text.png" width="100%" >
-                                   </div>
-                              </div>
-                        </div>
-                        
-                         <!-- ==============================================================================================================================-->
-                         <div class="row">
-                    
-                              <h3 id="a001">Individual Modality ROC</h3>
-                              <div class="rowmine">
-                                        
-                                   <div >
-                                        <img class="tile" src="img/ROC/Trimodal.png" width="100%" >
-                                   </div>
-                                   </div>
-                             </div>
-                             
-                              <!-- ==============================================================================================================================-->
-                              <!-- ==============================================================================================================================-->
-
-
-
-
-
+<!-- MITLL Trimodal -->
+<div id="a001"></div>
+<h2 style="text-align:center" class="move_down header">MITLL Trimodal Score Dataset</h2>
+  <div class="row">
+     
+	<h3 id="a1">Dataset by numbers</h3>
+     <div class="rowmine">
+          <table border="1" class="dataframe">
+               <thead>
+                 <tr style="text-align: right;">
+                   <th></th>
+                   <th>Original</th>
+                   <th>Balanced</th>
+                 </tr>
+               </thead>
+               <tbody>
+                 <tr>
+                   <th style="text-align: right;"># Score Vectors</th>
+                   <td>107,471</td>
+                   <td>59,364</td>
+                 </tr>
+                 <tr>
+                   <th style="text-align: right;"># Genuine Score Vectors</th>
+                   <td>77,789</td>
+                   <td>29,682</td>
+                 </tr>
+                 <tr>
+                   <th style="text-align: right;"># Imposter Score Vectors</th>
+                   <td>29,682</td>
+                   <td>29,682</td>
+                 </tr>
+                 <!-- <tr>
+                   <th># Subjects</th>
+                   <td>549</td>
+                   <td>546</td>
+                 </tr> -->
+               </tbody>
+             </table>
+		</div>
+    </div>
+    
+     <!-- Modality Distributions -->
+     <div class="row">
+     
+          <h3> Modality Distributions</h3>
+          <div class="rowmine">
+               <div class="rowmine">
+                    <div >
+                         <img class="tile" src="img/HISTS/Trimodal-Face.png" width="100%" >
+                    </div>
+                    <div >
+                         <img class="tile" src="img/HISTS/Trimodal-Speaker.png" width="100%" >
+                    </div>
+                    <div >
+                         <img class="tile" src="img/HISTS/Trimodal-Text.png" width="100%" >
+                    </div>
+               </div>
+         </div>
+         
+          <!-- Individual Modality ROC -->
+          <div class="row">
+     
+               <h3>Individual Modality ROC</h3>
+               <div class="rowmine">
+                         
+                    <div >
+                         <img class="tile" src="img/ROC/Trimodal.png" width="100%" >
+                    </div>
+                    </div>
+              </div>
           </div>
      </div>
 </section>
-
 
 <!-- Footer Section -->
 
@@ -430,8 +438,6 @@ http://www.templatemo.com/tm-498-stimulus
        document.body.scrollTop = 0;
        document.documentElement.scrollTop = 0;
      }
-     </script>
-     
-
+</script>
 </body>
 </html>
