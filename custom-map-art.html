@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Map Art | Melissa Dale</title>
+
+  <style>
+    :root {
+      --bg: #f7f3eb;
+      --text: #262626;
+      --muted: #666;
+      --accent: #9b7a44;
+      --card: #ffffff;
+      --border: #e5ded2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 64px 24px 36px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    header p {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 72px;
+    }
+
+    .intro {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 28px;
+      margin-bottom: 36px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.04);
+    }
+
+    .intro h2,
+    .process h2,
+    .gallery-section h2 {
+      margin-top: 0;
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+    }
+
+    .tech-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .tech-item {
+      background: #fbfaf7;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .tech-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--accent);
+    }
+
+    .gallery-section {
+      margin-top: 44px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+      margin-top: 20px;
+    }
+
+    .map-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+    }
+
+    .map-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .map-card-content {
+      padding: 18px 18px 20px;
+    }
+
+    .map-card h3 {
+      margin: 0 0 6px;
+      font-size: 1.05rem;
+    }
+
+    .map-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .process {
+      margin-top: 44px;
+      background: #fffaf1;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 28px;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .step {
+      background: rgba(255, 255, 255, 0.75);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .step span {
+      display: inline-block;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 36px 24px 52px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Custom Map Art</h1>
+    <p>
+      A Python-based map generation pipeline for creating stylized, high-resolution
+      geographic artwork from real-world spatial data.
+    </p>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Project Overview</h2>
+      <p>
+        This project generates print-ready custom map artwork using geographic data,
+        configurable visual styles, and optional location markers. The system was built
+        as a flexible rendering pipeline that can adapt to different locations, aspect
+        ratios, palettes, map features, and customer-requested design choices.
+      </p>
+
+      <p>
+        Rather than relying on manually edited screenshots, the workflow programmatically
+        extracts and renders spatial data into clean, customizable compositions. This
+        makes it possible to produce consistent visual outputs while still allowing each
+        map to feel personal and location-specific.
+      </p>
+
+      <div class="tech-list">
+        <div class="tech-item">
+          <strong>Data extraction</strong>
+          OSMnx and OpenStreetMap data
+        </div>
+        <div class="tech-item">
+          <strong>Geospatial processing</strong>
+          GeoPandas and Shapely
+        </div>
+        <div class="tech-item">
+          <strong>Rendering</strong>
+          Matplotlib-based custom styling
+        </div>
+        <div class="tech-item">
+          <strong>Customization</strong>
+          Palette controls, road grouping, water/park layers, and optional markers
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <h2>Selected Outputs</h2>
+
+      <div class="gallery">
+        <article class="map-card">
+          <img src="img/SausalitoCA_teal_brass_star_map.png" alt="Stylized teal and brass map of Sausalito, California with a star marker" />
+          <div class="map-card-content">
+            <h3>Sausalito, CA — Teal Brass</h3>
+            <p>A dark, high-contrast palette with layered road and water features.</p>
+          </div>
+        </article>
+
+        <article class="map-card">
+          <img src="img/SausalitoCA_rose_gold_noir_star_map.png" alt="Stylized rose gold and noir map of Sausalito, California with a star marker" />
+          <div class="map-card-content">
+            <h3>Sausalito, CA — Rose Gold Noir</h3>
+            <p>A softer dark palette designed for a more decorative print style.</p>
+          </div>
+        </article>
+
+        <article class="map-card">
+          <img src="img/SausalitoCA_light_sandstone_star_map.png" alt="Light sandstone map of Sausalito, California with a star marker" />
+          <div class="map-card-content">
+            <h3>Sausalito, CA — Light Sandstone</h3>
+            <p>A minimal light-toned layout with subtle geographic layers.</p>
+          </div>
+        </article>
+
+        <article class="map-card">
+          <img src="img/GloucesterMA_light_sandstone_map_heart.png" alt="Light sandstone map of Gloucester, Massachusetts with a heart marker" />
+          <div class="map-card-content">
+            <h3>Gloucester, MA — Heart Marker</h3>
+            <p>An example of configurable marker shapes for personal locations.</p>
+          </div>
+        </article>
+
+        <article class="map-card">
+          <img src="img/GLASGOW.png" alt="Custom map poster of Glasgow, Montana" />
+          <div class="map-card-content">
+            <h3>Glasgow, MT</h3>
+            <p>A poster-style map with typography, highlighted roads, and landmark emphasis.</p>
+          </div>
+        </article>
+
+        <article class="map-card">
+          <img src="img/BOZEMAN.png" alt="Custom map poster of Bozeman, Montana" />
+          <div class="map-card-content">
+            <h3>Bozeman, MT</h3>
+            <p>A larger city-scale composition with custom road styling and layout controls.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="process">
+      <h2>How the Pipeline Works</h2>
+
+      <div class="process-grid">
+        <div class="step">
+          <span>01. Define location</span>
+          Select a city, neighborhood, or custom bounding box based on the desired print area.
+        </div>
+
+        <div class="step">
+          <span>02. Retrieve map data</span>
+          Pull roads, water, parks, and other geographic layers from OpenStreetMap.
+        </div>
+
+        <div class="step">
+          <span>03. Apply styling</span>
+          Use configurable palettes and layer-specific drawing rules to create the final visual style.
+        </div>
+
+        <div class="step">
+          <span>04. Render output</span>
+          Export high-resolution artwork suitable for digital delivery or print.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Created by Melissa Dale · <a href="index.html">Back to home</a>
+  </footer>
+</body>
+</html>
