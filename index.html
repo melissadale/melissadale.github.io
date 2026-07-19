@@ -23,7 +23,7 @@
             <img src="./img/headshot.png" alt="Melissa R. Dale">
             <div id="text-descript">
                 <h1>Melissa R. Dale, PhD</h1>
-                <h3>Machine Learning Research Scientist</h3>
+                <h3>Machine Learning Research | Data Scientist</h3>
                 <p><em>Modeling complex systems under uncertainty</em></p>
                 <p><a href="mailto:melissa.r.dale@gmail.com">melissa.r.dale@gmail.com</a></p>
                 <p>
@@ -39,10 +39,7 @@
             <div class="education-section">
                 <h2 class="section-title">ABOUT</h2>
                 <p>
-                    I’m a machine learning researcher focused on building predictive models under uncertainty.
-                    My work centers on combining multiple data sources to improve decision-making in complex,
-                    real-world systems. I’m particularly interested in applying these methods to scientific problems
-                    where models guide real-world exploration and discovery.
+                    I’m a machine learning researcher with a PhD in Computer Science and Engineering, and I’m drawn to problems where the data is messy, incomplete, or difficult to interpret. I build practical, carefully evaluated models that combine information from multiple sources, with a strong focus on understanding when a model works, when it fails, and what its results actually mean. I enjoy turning complex technical questions into clear, reproducible analyses that can support better real-world decisions.
                 </p>
             </div>
         </div>
@@ -191,52 +188,154 @@
                 </div>
             </div>
         </div>
-
-        <div class="section right-orientated" id="projects">
-            <img src="./img/research.jpg" alt="Projects Image">
-            <div class="education-section">
-                <h2 class="section-title">PROJECTS</h2> 
-                <div class="education-entry">
-                    <div class="institution-dates">
-                        <span class="institution">Map Generation Pipeline</span>
-                        <span class="dates">2025 - Current</span>
-                    </div>
-                    <div class="degree"><a href="custom-map-art.html">Custom Map Art — Visualization Pipeline</a></div>
-                    <div class="details">
-                        Built a geospatial data pipeline using OSMnx and GeoPandas to extract, process, and visualize
-                        OpenStreetMap data. Designed configurable rendering workflows for feature extraction,
-                        visualization, and large-scale custom map generation.
-                    </div>
-                    <div class="degree"><b>Technologies:</b> Python, OSMnx, GeoPandas, Matplotlib</div>
+    <div class="section right-orientated" id="projects">
+        <img src="./img/research.jpg" alt="Projects Image">
+    
+        <div class="education-section">
+            <h2 class="section-title">PROJECTS</h2>
+    
+            <div class="education-entry">
+                <div class="institution-dates">
+                    <span class="institution">Multimodal Deception Detection</span>
+                    <span class="dates">2026 – Present</span>
                 </div>
-
-                <div class="education-entry">
-                    <div class="institution-dates">
-                        <span class="institution">Score Fusion App</span>
-                        <span class="dates">2020</span>
-                    </div>
-                    <div class="degree"><a href="https://github.com/melissadale/ScoreFusionApp">GitHub</a></div>
-                    <div class="details">
-                        Framework for evaluating and comparing score-level fusion strategies across biometric datasets,
-                        including normalization, distribution analysis, and performance visualization.
-                    </div>
-                    <div class="degree"><b>Technologies:</b> Python, Kivy, Pandas, Scikit-learn, Matplotlib</div>
+    
+                <div class="degree">
+                    <a
+                        href="https://github.com/melissadale/multimodal-deception-detection"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
                 </div>
-
-                <div class="education-entry">
-                    <div class="institution-dates">
-                        <span class="institution">Grime Injector</span>
-                        <span class="dates">2014</span>
-                    </div>
-                    <div class="degree"><a href="https://github.com/melissadale/grime-injector">GitHub</a></div>
-                    <div class="details">
-                        Java-based research tool for simulating architectural decay and measuring the impact of
-                        design pattern erosion on software quality.
-                    </div>
-                    <div class="degree"><b>Technologies:</b> Java, SonarQube, JAD, Javassist</div>
+    
+                <div class="details">
+                    Developing a reproducible machine learning pipeline for detecting deception from
+                    narrative text and behavioral typing signals. Built data validation and feature
+                    extraction tools, fixed participant-level train/test and cross-validation splits,
+                    and classical NLP baselines designed to prevent participant leakage.
+                </div>
+    
+                <div class="degree">
+                    <b>Technologies:</b> Python, Pandas, NumPy, Scikit-learn, NLP, TF-IDF, Jupyter
+                </div>
+            </div>
+    
+            <div class="education-entry">
+                <div class="institution-dates">
+                    <span class="institution">Postie Data Science Case Study</span>
+                    <span class="dates">2026</span>
+                </div>
+    
+                <div class="degree">
+                    <a
+                        href="https://github.com/melissadale/postie-data-science-presentation"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+                    |
+                    <a
+                        href="https://github.com/melissadale/postie-data-science-presentation/blob/main/postie_findings_summary.md"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Findings Summary
+                    </a>
+                </div>
+    
+                <div class="details">
+                    Analyzed transaction-level e-commerce data to identify normalization problems,
+                    outliers, unexpected values, and reporting pitfalls. Investigated purchasing
+                    patterns and product information, evaluated meaningful business metrics, and
+                    produced an uncertainty-aware sales forecast with clearly documented recommendations.
+                </div>
+    
+                <div class="degree">
+                    <b>Technologies:</b> Python, Pandas, NumPy, Scikit-learn, Matplotlib, Jupyter
+                </div>
+            </div>
+    
+            <div class="education-entry">
+                <div class="institution-dates">
+                    <span class="institution">Score Fusion App</span>
+                    <span class="dates">2020</span>
+                </div>
+    
+                <div class="degree">
+                    <a
+                        href="https://github.com/melissadale/ScoreFusionApp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+                </div>
+    
+                <div class="details">
+                    Developed an interactive framework for ingesting, normalizing, combining, and
+                    evaluating prediction scores from multiple models and data sources. The application
+                    supports strategy comparison, performance analysis, and visualization across
+                    biometric and other score-based classification problems.
+                </div>
+    
+                <div class="degree">
+                    <b>Technologies:</b> Python, Kivy, Pandas, Scikit-learn, Matplotlib
+                </div>
+            </div>
+    
+            <div class="education-entry">
+                <div class="institution-dates">
+                    <span class="institution">Map Generation Pipeline</span>
+                    <span class="dates">2025 – Present</span>
+                </div>
+    
+                <div class="degree">
+                    <a href="custom-map-art.html">
+                        Custom Map Art — Visualization Pipeline
+                    </a>
+                </div>
+    
+                <div class="details">
+                    Built a configurable geospatial pipeline for extracting, processing, and rendering
+                    OpenStreetMap data. Developed reusable workflows for selecting geographic features,
+                    transforming spatial data, and generating large-scale custom map visualizations.
+                </div>
+    
+                <div class="degree">
+                    <b>Technologies:</b> Python, OSMnx, GeoPandas, Matplotlib
+                </div>
+            </div>
+    
+            <div class="education-entry">
+                <div class="institution-dates">
+                    <span class="institution">Grime Injector</span>
+                    <span class="dates">2014</span>
+                </div>
+    
+                <div class="degree">
+                    <a
+                        href="https://github.com/melissadale/grime-injector"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+                </div>
+    
+                <div class="details">
+                    Java-based research tool for simulating architectural decay and measuring the impact
+                    of design pattern erosion on software quality.
+                </div>
+    
+                <div class="degree">
+                    <b>Technologies:</b> Java, SonarQube, JAD, Javassist
                 </div>
             </div>
         </div>
+    </div>
 
         <div class="section left-orientated" id="personal">
             <img src="./img/edu.png" alt="Activities Image">
