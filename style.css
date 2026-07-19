@@ -1,48 +1,168 @@
-/* Color Palette Update */
+/* ---------- Color palette ---------- */
+
 :root {
-    --accent-color: #00FFC5; /* Light Green */
-    --dark-bg: #00241B; /* Dark Green */
-    --highlight-color: #EB8258; /* orange - update: purple */
-    --secondary-color: #7F6C8D ; /* Grey Purple */
-    --background-color: #FFFFFF; /* White */
+    --accent-color: #00ffc5;
+    --dark-bg: #00241b;
+    --highlight-color: #b34f2b;
+    --secondary-color: #6a5877;
+    --background-color: #ffffff;
+    --muted-background: #f7f7f7;
+    --border-color: #d8dedc;
+}
+
+
+/* ---------- Base styles ---------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 78px 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
     background-color: var(--background-color);
     color: var(--dark-bg);
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: var(--highlight-color);
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    text-decoration-thickness: 2px;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+
+/* ---------- Navigation ---------- */
+
 nav {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    background: var(--dark-bg);
+    background-color: var(--dark-bg);
     z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 36, 27, 0.22);
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+nav#navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 18px 20px;
+    list-style: none;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+nav#navbar ul li {
+    margin: 0;
 }
 
-nav ul li a {
+nav#navbar ul li a {
     color: var(--accent-color);
+    font-weight: bold;
     text-decoration: none;
+    transition:
+        color 0.2s ease,
+        text-decoration-color 0.2s ease;
 }
+
+nav#navbar ul li a:hover {
+    color: #ffffff;
+}
+
+nav#navbar ul li a:focus-visible {
+    color: #ffffff;
+}
+
+
+/* ---------- Main layout ---------- */
+
+.main-container {
+    width: min(900px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 20px 0 40px;
+}
+
+hr {
+    margin: 30px 0 50px;
+    border: 0;
+    border-top: 1px solid var(--border-color);
+}
+
+
+/* ---------- Introduction ---------- */
+
+#intro-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    max-width: 900px;
+    margin: 10px auto 20px;
+}
+
+#intro-header img {
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#text-descript {
+    flex: 1;
+    min-width: 0;
+}
+
+#text-descript h1 {
+    margin: 0 0 4px;
+    line-height: 1.2;
+}
+
+#text-descript h3 {
+    margin: 0 0 8px;
+    color: var(--secondary-color);
+}
+
+#text-descript p {
+    margin: 7px 0;
+}
+
+
+/* ---------- Page sections ---------- */
 
 .section {
     display: flex;
-    align-items: center;
-    margin-bottom: 40px; /* Spacing between sections */
+    align-items: flex-start;
+    gap: 22px;
+    margin-bottom: 55px;
+    scroll-margin-top: 100px;
 }
 
 .left-orientated {
@@ -53,134 +173,204 @@ nav ul li a {
     flex-direction: row-reverse;
 }
 
-.section img {
+.section > img {
     width: 150px;
     height: auto;
+    flex: 0 0 150px;
+    margin-top: 20px;
     object-fit: cover;
     border-radius: 10px;
-    margin: 0 20px;
 }
 
-.section div {
+.section > .education-section {
     flex: 1;
-}
-
-footer {
-    background-color: var(--background-color);
-    color: var(--dark-bg);
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-#intro-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-    max-width: 960px; /* Matches the max-width of your sections */
-    padding-top: 50px; /* Adds padding at the top */
-}
-
-#intro-header img {
-    width: 150px;
-    margin-right: 20px;
-}
-
-#intro-header div {
-    flex-grow: 1;
-}
-
-.main-container {
-    width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    min-width: 0;
 }
 
 .education-section {
-    padding: 20px;
+    padding: 0 10px;
 }
 
 .section-title {
-    border-bottom: 2px solid #00FFC5;
+    margin: 0 0 22px;
+    padding-bottom: 7px;
     color: var(--secondary-color);
-    padding-bottom: 5px;
+    border-bottom: 2px solid var(--accent-color);
+    letter-spacing: 0.02em;
 }
 
+
+/* ---------- Entries ---------- */
+
 .education-entry {
-    display: block;
-    margin-top: 20px;
+    margin-top: 24px;
+}
+
+.education-entry:first-of-type {
+    margin-top: 0;
 }
 
 .institution-dates {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
+    gap: 20px;
 }
 
 .institution-dates .institution {
-    font-weight: bold;
     flex: 1;
-    text-align: left;
+    min-width: 0;
     color: var(--highlight-color);
+    font-weight: bold;
+    text-align: left;
 }
 
 .institution-dates .dates {
-    margin-left: 20px;
-    white-space: nowrap;
+    flex-shrink: 0;
     color: var(--dark-bg);
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .degree {
-    font-style: italic;
     margin-top: 5px;
+    font-style: italic;
 }
 
 .details {
-    margin-top: 5px;
-    margin-left: 40px;
+    margin-top: 7px;
+    margin-left: 28px;
 }
 
+.education-entry + .education-entry {
+    padding-top: 4px;
+}
+
+
+/* ---------- Footer ---------- */
+
+footer {
+    width: 100%;
+    padding: 16px 20px;
+    color: var(--dark-bg);
+    text-align: center;
+    background-color: var(--muted-background);
+}
+
+
+/* ---------- Tablet and mobile ---------- */
+
 @media (max-width: 768px) {
-    .education-entry,
-    .institution-dates {
-        flex-direction: column;
-        align-items: flex-start;
+    html {
+        scroll-padding-top: 132px;
     }
 
-    .institution-dates .dates {
-        margin-left: 0;
-        margin-top: 5px;
-        text-align: right;
+    body {
+        padding-top: 116px;
+    }
+
+    nav#navbar ul {
+        gap: 8px 20px;
+        padding: 14px 16px;
     }
 
     .main-container {
-        width: auto;
-        padding: 20px;
+        width: min(100% - 30px, 700px);
+        padding-top: 15px;
+    }
+
+    #intro-header {
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    #intro-header img {
+        width: 125px;
+        height: 125px;
+    }
+
+    .section {
+        gap: 16px;
+        scroll-margin-top: 132px;
+    }
+
+    .section > img {
+        width: 120px;
+        flex-basis: 120px;
+    }
+
+    .education-section {
+        padding: 0;
+    }
+
+    .institution-dates {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .institution-dates .dates {
+        margin: 0;
+    }
+
+    .details {
+        margin-left: 18px;
     }
 }
 
-nav#navbar ul {
-    padding: 0;
-    text-align: center;
-    margin: 20; /* Adjust as needed */
-}
 
-nav#navbar ul li {
-    display: inline-block;
-    margin-right: 50px; /* Increases space between menu items */
-}
+/* ---------- Small mobile screens ---------- */
 
-nav#navbar ul li a {
-    color: var(--accent-color); /* Original color */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s; /* Smooth transition for hover effect */
-}
+@media (max-width: 560px) {
+    html {
+        scroll-padding-top: 150px;
+    }
 
-nav#navbar ul li a:hover {
-    color: #FFFFFF; /* Changes text color to white on hover */
+    body {
+        padding-top: 138px;
+    }
+
+    nav#navbar ul {
+        gap: 7px 16px;
+        padding: 12px;
+        font-size: 0.92rem;
+    }
+
+    #intro-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #intro-header img {
+        width: 145px;
+        height: 145px;
+    }
+
+    .section,
+    .left-orientated,
+    .right-orientated {
+        flex-direction: column;
+    }
+
+    .section {
+        gap: 8px;
+        margin-bottom: 45px;
+        scroll-margin-top: 150px;
+    }
+
+    .section > img {
+        width: 100%;
+        height: 150px;
+        flex-basis: auto;
+        margin-top: 0;
+        object-fit: cover;
+    }
+
+    .section-title {
+        margin-top: 8px;
+    }
+
+    .details {
+        margin-left: 0;
+    }
 }
